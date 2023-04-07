@@ -1,0 +1,35 @@
+@host = http://127.0.0.1/
+###
+
+### Render a Graph
+POST {{host}}/render?format=png&engine=dot
+Content-Type: text/plain
+
+A -> B
+B -> C
+C -> A
+
+### Render a simple Graph
+POST {{host}}/render?format=png&engine=dot
+Content-Type: text/plain
+
+"Grapviz on Python Flask rocks!" [shape=box, fontname="sego ui", style=filled, fillcolor="#ccdee0"]
+
+### Render a more complex Graph
+POST {{host}}/render?format=png&engine=dot
+Content-Type: text/plain
+
+app          [label="Canvas Appx", fontname="sego ui", shape=box, style=filled, fillcolor="#E696C9"]
+flow         [label="Power Automate", fontname="sego ui", shape=box, style=filled, fillcolor="#72BDFD"]
+http         [label="Azure Web Service", fontname="sego ui", shape=box, style=filled, fillcolor="#0078d4", fontcolor="white"]
+flask        [label="Flask", fontname="sego ui", shape=box, style=filled, fillcolor="#57C580"]
+graphviz     [label="Graphviz", fontname="sego ui", shape=box, style=filled, fillcolor="#85D887"]
+
+app -> flow
+flow -> app
+flow -> http
+http -> flow
+http -> flask
+flask -> http
+flask -> graphviz
+graphviz -> flask
