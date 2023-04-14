@@ -1,6 +1,6 @@
 # MMe2k Graphviz
 
-This is the example repository to my Blog Post at [https://**Never-Stop-Learning**.de/](https://never-stop-learning.de/). 
+This is my example repository to my Blog Post at [https://**Never-Stop-Learning**.de/](https://never-stop-learning.de/) about [Build a Microservice for Power Platform](https://never-stop-learning.de/build-microservices-4-pp).
 
 ## Build & Run the Microservice
 
@@ -66,7 +66,7 @@ Content-Type: text/plain
 POST {{host}}/render?format=png&engine=dot
 Content-Type: text/plain
 
-app          [label="Canvas Appx", fontname="sego ui", shape=box, style=filled, fillcolor="#E696C9"]
+app          [label="Canvas App", fontname="sego ui", shape=box, style=filled, fillcolor="#E696C9"]
 flow         [label="Power Automate", fontname="sego ui", shape=box, style=filled, fillcolor="#72BDFD"]
 http         [label="Azure Web Service", fontname="sego ui", shape=box, style=filled, fillcolor="#0078d4", fontcolor="white"]
 flask        [label="Flask", fontname="sego ui", shape=box, style=filled, fillcolor="#57C580"]
