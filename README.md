@@ -44,7 +44,7 @@ The micro service is listening on localhost port 80 after starting the docker co
 
 Use VS Code with the RESTClient extension to run these HTTP calls.
 
-```http
+```
 ### Variable
 @host = http://127.0.0.1:80/
 
